@@ -15,7 +15,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
 <script>
-    const socket = new SockJS("https://chat-app-rho-lake.vercel.app/ws");
+    const socket = new SockJS("http//localhost:9090/ws");
     const stompClient = Stomp.over(socket);
 
     stompClient.connect({}, function () {
